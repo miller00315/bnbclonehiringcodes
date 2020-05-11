@@ -5,27 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AirBnB clone Hiring Codes</title>
-    <!--js-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/092b80762b.js"
-      crossorigin="anonymous"
-    ></script>
-    <script type="text/javascript" src="javascript/script.js"></script>
+
     <!--CSS-->
     <link
       rel="stylesheet"
@@ -34,12 +14,277 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles/style.css" />
+
+    <!--Bootstrap js-->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <!-- font awesome js-->
+    <script
+      src="https://kit.fontawesome.com/092b80762b.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Local js-->
+    <script type="text/javascript" src="javascript/script.js"></script>
   </head>
   <body>
     <main>
-      <nav
-        class="navbar fixed-top navbar-expand-lg navbar-light bg-light"
-      ></nav>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="assets/images/logo.png"
+            class="d-block w-25"
+            alt="Logo air AirBnB"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navibarItems"
+          aria-controls="navibarItems"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navibarItems" class="collapse navbar-collapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <i
+                  class="fas fa-globe"
+                  style="font-size: 25px; color: #731ab7;"
+                ></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdown">
+                <a class="dropdown-item" href="#"
+                  ><i
+                    class="fas fa-globe"
+                    style="font-size: 15px; color: #731ab7; margin-right: 10px;"
+                  ></i
+                  >Português (BR)</a
+                >
+                <a class="dropdown-item" href="#">R$ BRL</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hospede em sua acomodação</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hospede em uma nova experiência</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Em que podemos ajudar?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Entrar</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section class="ml-3 mr-3">
+        <div id="carouselCaptions" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselCaptions"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselCaptions" data-slide-to="1"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://saopauloparacriancas.com.br/wp-content/uploads/2019/12/SPcriancas_128_anos_Av_Paulista-26.jpg?v=9314"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="city-name">São Paulo - Brasil</h5>
+                <p>
+                  Vai curtir Sampa? aproveite os melhores AP's da cidade!
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="http://1234voce.com/wp-content/uploads/2018/07/rj-unidade1.png"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="city-name">Rio de Janeiro - Brasil</h5>
+                <p>
+                  Praia, sol e futvôlei, que tal ficar na beira da praia ein?
+                  Bora aproveitar o solzão e ser feliz!
+                </p>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselCaptions"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselCaptions"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </section>
+      <section class="search-form ml-3 mr-3 mb-5">
+        <form class="form-row">
+          <div id="label-location" class="column col-md-3">
+            <label class="form-label my-1 mr-2" for="inlineFormInputName2"
+              >Localização</label
+            >
+            <input
+              type="text"
+              class="form-control mb-2 mr-sm-2"
+              id="inlineFormInputName2"
+              placeholder="Para onde você vai?"
+            />
+          </div>
+          <div id="label-checkin" class="column col-md-4">
+            <label
+              class="form-label my-1 mr-2"
+              for="inlineFormInputGroupUsername2"
+              >Check-in/Checkout</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="inlineFormInputGroupUsername2"
+              placeholder="Insira as datas"
+            />
+          </div>
+          <div id="label-hostage" class="column col-md-3">
+            <label
+              class="form-label my-1 mr-2"
+              for="inlineFormInputGroupUsername2"
+              >Hóspedes</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="inlineFormInputGroupUsername2"
+              placeholder="Insira o número de hóspedes"
+            />
+          </div>
+          <button type="submit" class="btn btn-success col-md-2">
+            <i
+              class="fas fa-search"
+              style="font-size: 20px; color: #ffffff; margin-right: 6px;"
+            ></i
+            >Buscar
+          </button>
+        </form>
+      </section>
+      <section class="result mb-3">
+        <h1 class="mr-3 ml-3">Olha ai o que temos para você</h1>
+        <div class="results" id="results"></div>
+        <div class="pagination">
+          <ul class="pagination" id="pagination"></ul>
+        </div>
+      </section>
     </main>
+    <section id="footer">
+      <div class="container">
+        <div class="row text-center text-xs-center text-sm-left text-md-left">
+          <div class="col-xs-12 col-sm-3 col-md-3">
+            <h5>Sobre</h5>
+            <ul class="list-unstyled quick-links">
+              <li><a href="#">Diversidade e pertencimento</a></li>
+              <li><a href="#">Acessibilidade</a></li>
+              <li><a href="#">Confiança e segurança</a></li>
+              <li><a href="#">AirBnB Clone Citizen</a></li>
+              <li><a href="#">Newsroom</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-3 col-md-3">
+            <h5>Comunidade</h5>
+            <ul class="list-unstyled quick-links">
+              <li><a href="#">AirBnB Clone Magazine</a></li>
+              <li><a href="#">AirBnB Clone for Work</a></li>
+              <li><a href="#">Convide amigos</a></li>
+              <li><a href="#">Carreiras</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-3 col-md-3">
+            <h5>Anfitrião</h5>
+            <ul class="list-unstyled quick-links">
+              <li><a href="#">Hospede em sua acomodação</a></li>
+              <li><a href="#">Ofereça uma experiência</a></li>
+              <li><a href="#">Hospedagem responsável</a></li>
+              <li><a href="#">Open Homes</a></li>
+              <li><a href="#">Olimpíadas</a></li>
+              <li><a href="#">Central de Recursos</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-3 col-md-3">
+            <h5>Atendimento</h5>
+            <ul class="list-unstyled quick-links">
+              <li><a href="#">Central de Ajuda</a></li>
+              <li><a href="#">Atendimento ao Bairro</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+            <ul class="list-unstyled list-inline social text-center">
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/millercesaroliveira/"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/miller00315"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="mailto: miller00315@gmail.com" target="_blank"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <hr />
+        </div>
+        <div class="row creditos">
+          Atividade desenvolvida por Miller César de Oliveira, powered by
+          Bootstrap and FontAwesome Icons
+        </div>
+      </div>
+    </section>
   </body>
 </html>
