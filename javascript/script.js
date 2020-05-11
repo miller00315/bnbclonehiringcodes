@@ -45,6 +45,18 @@ function renderItems(results) {
 
     internalDiv.appendChild(cardHeader);
 
+    let cardType = document.createElement('h6');
+    cardType.className = 'card-type';
+    cardType.innerHTML = `Tipo de moradia: ${item.property_type}`;
+
+    internalDiv.appendChild(cardType);
+
+    let cardPrice = document.createElement('h6');
+    cardPrice.className = 'card-type';
+    cardPrice.innerHTML = `Valor diária: R$ ${item.price.toFixed(2)}`;
+
+    internalDiv.appendChild(cardPrice);
+
     roomDiv.appendChild(internalDiv);
 
     rooms.appendChild(roomDiv);

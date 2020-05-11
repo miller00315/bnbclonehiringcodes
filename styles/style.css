@@ -1,11 +1,6 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 @font-face {
-  font-family: cereal-medium;
-  src: url('../assets/fonts/AirbnbCerealMedium.ttf');
-}
-
-@font-face {
   font-family: cereal-light;
   src: url('../assets/fonts/AirbnbCerealLight.ttf');
 }
@@ -13,6 +8,11 @@
 @font-face {
   font-family: cereal-bold;
   src: url('../assets/fonts/AirbnbCerealBold.ttf');
+}
+
+@font-face {
+  font-family: cereal-medium;
+  src: url('../assets/fonts/AirbnbCerealMedium.ttf');
 }
 
 * {
@@ -59,14 +59,10 @@ p.card-text {
 }
 
 h5.card-title,
-p.card-text {
+h6.card-type {
   text-align: start;
   justify-content: left;
-}
-
-h6.card-text {
-  text-align: end;
-  justify-content: right;
+  color: #c654b2;
 }
 
 div.card {
@@ -165,7 +161,6 @@ section.result .pagination {
   justify-content: center;
   align-items: center;
 }
-/* Footer */
 
 section {
   padding: 60px 0;
